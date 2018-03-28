@@ -1,0 +1,358 @@
+{
+    "items": [{
+        "text": "Quick Start",
+        "rootPath": "quick_start",
+        "items": [{
+            "name": "Introduction",
+            "slug": "introduction",
+            "summary": "An introduction to the Ext JS JavaScript framework"
+        }, {
+            "name": "Components",
+            "slug": "components",
+            "summary": "Explore Ext JS components and learn how to configure them"
+        }, {
+            "name": "Containers",
+            "slug": "containers",
+            "summary": "Learn to nest components within container components"
+        }, {
+            "name": "Presenting Data",
+            "slug": "presenting_data",
+            "summary": "Connect your data to your view components"
+        }, {
+            "name": "Handling Events",
+            "slug": "handling_events",
+            "summary": "Respond to users interacting with your application with events"
+        }, {
+            "name": "Data Forms",
+            "slug": "data_forms",
+            "summary": "Present data in form fields so that values can be modified"
+        }, {
+            "name": "Data Binding",
+            "slug": "data_binding",
+            "summary": "Bind data to component configs for automatic responses to change"
+        }, {
+            "name": "Getting Organized",
+            "slug": "getting_organized",
+            "summary": "Move your code into an organized structure by defining its parts"
+        }, {
+            "name": "Bringing it Together",
+            "slug": "bringing_it_together",
+            "summary": "Add extra functionality to make this application more useful"
+        }, {
+            "name": "Going to Production",
+            "slug": "going_to_production",
+            "summary": "Use Sencha Cmd to make your application lightweight and efficient"
+        }, {
+            "name": "Helpful Resources",
+            "slug": "helpful_resources",
+            "summary": "Continue your Ext JS education with more helpful resources"
+        }]
+    }, {
+        "text": "Guides",
+        "items": [{
+            "name": "Getting Started",
+            "slug": "getting_started",
+            "children": [{
+                "name": "Setup",
+                "slug": "getting_started",
+                "toolkit": "universal"
+            }]
+        }, {
+            "name": "What's New?",
+            "slug": "whats_new",
+            "children": [{
+                "displayNew": true,
+                "name": "What's New",
+                "slug": "whats_new",
+                "toolkit": "universal"
+            }, {
+                "displayNew": true,
+                "name": "Release Notes",
+                "slug": "release_notes",
+                "toolkit": "universal"
+            }, {
+                "displayNew": true,
+                "name": "Upgrade Guide",
+                "slug": "extjs_upgrade_guide",
+                "toolkit": "universal"
+            }, {
+                "name": "API Diffs",
+                "slug": "api_diffs",
+                "children": [{
+                    "displayNew": true,
+                    "name": "Modern - 6.5.1 to 6.5.2",
+                    "slug": "652_modern_diff",
+                    "toolkit": "modern"
+                }, {
+                    "displayNew": true,
+                    "name": "Classic - 6.5.1 to 6.5.2",
+                    "slug": "652_classic_diff",
+                    "toolkit": "classic"
+                },{
+                    "displayNew": true,
+                    "name": "Modern - 6.5.0 to 6.5.1",
+                    "slug": "651_modern_diff",
+                    "toolkit": "modern"
+                }, {
+                    "displayNew": true,
+                    "name": "Classic - 6.5.0 to 6.5.1",
+                    "slug": "651_classic_diff",
+                    "toolkit": "classic"
+                },{
+                    "name": "Modern - 6.2.1 to 6.5.0",
+                    "slug": "650_modern_diff",
+                    "toolkit": "modern"
+                }, {
+                    "name": "Classic - 6.2.1 to 6.5.0",
+                    "slug": "650_classic_diff",
+                    "toolkit": "classic"
+                }]
+            }]
+        }, {
+            "name": "Examples",
+            "slug": "examples",
+            "children": [{
+                "displayNew": true,
+                "link": "http://examples.sencha.com/extjs/6.5.0/examples",
+                "name": "6.5.0 Examples",
+                "slug": "650examples",
+                "toolkit": "universal"
+            }, {
+                "displayNew": true,
+                "link": "http://examples.sencha.com/extjs/6.5.1/examples",
+                "name": "6.5.1 Examples",
+                "slug": "651examples",
+                "toolkit": "universal"
+            }]
+        }, {
+            "name": "Core Concepts",
+            "slug": "core_concepts",
+            "children": [{
+                "name": "The Class System",
+                "slug": "classes",
+                "toolkit": "universal"
+            }, {
+                "name": "Layouts and Containers",
+                "slug": "layouts",
+                "toolkit": "universal"
+            }, {
+                "name": "Components",
+                "slug": "components",
+                "toolkit": "universal"
+            }, {
+                "name": "Data Package",
+                "slug": "data_package",
+                "toolkit": "universal"
+            }, {
+                "name": "Gestures",
+                "slug": "gestures",
+                "toolkit": "universal"
+            }, {
+                "name": "Events",
+                "slug": "events",
+                "toolkit": "universal"
+            }, {
+                "name": "Drag and Drop",
+                "slug": "drag_drop",
+                "toolkit": "classic"
+            }, {
+                "name": "Modern Drag and Drop",
+                "slug": "modern_drag_drop",
+                "toolkit": "universal"
+            }, {
+                "name": "Theming System",
+                "slug": "theming",
+                "toolkit": "universal"
+            }, {
+                "displayNew": true,
+                "name": "Theming in the Modern Toolkit",
+                "slug": "modern_theming",
+                "toolkit": "modern"
+            }, {
+                "displayNew": true,
+                "name": "Theming in the Classic Toolkit",
+                "slug": "classic_theming",
+                "toolkit": "classic"
+            }, {
+                "displayNew": true,
+                "name": "Material Theme",
+                "slug": "material_theme",
+                "toolkit": "modern"
+            }, {
+                "name": "Memory Management",
+                "slug": "memory_management",
+                "toolkit": "universal"
+            }, {
+                "displayNew": true,
+                "name": "Using D3 in Ext JS",
+                "slug": "d3",
+                "toolkit": "universal",
+                "tier": "premium"
+            }, {
+                "name": "Draw Package",
+                "slug": "draw",
+                "children": [{
+                    "name": "Draw Package",
+                    "slug": "drawing",
+                    "toolkit": "universal"
+                }, {
+                    "name": "Creating Images - Pt 1",
+                    "slug": "creating_images_with_draw_pt1",
+                    "toolkit": "universal"
+                }, {
+                    "name": "Creating Images - Pt 2",
+                    "slug": "creating_images_with_draw_pt2",
+                    "toolkit": "universal"
+                }, {
+                    "name": "Creating Images - Pt 3",
+                    "slug": "creating_images_with_draw_pt3",
+                    "toolkit": "universal"
+                }]
+            }, {
+                "name": "Accessibility",
+                "slug": "accessibility",
+                "toolkit": "classic"
+            }, {
+                "name": "Localization",
+                "slug": "localization",
+                "toolkit": "classic"
+            }, {
+                "name": "Right to Left in Ext JS",
+                "slug": "rtl",
+                "toolkit": "classic"
+            }, {
+                "name": "Sencha Font Packages",
+                "slug": "font_ext",
+                "toolkit": "universal"
+            }, {
+                "name": "Tablet Support",
+                "slug": "tablet_support",
+                "toolkit": "classic"
+            }]
+        }, {
+            "name": "Architecture",
+            "slug": "application_architecture",
+            "children": [{
+                "name": "Intro to App Architecture",
+                "slug": "application_architecture",
+                "toolkit": "universal"
+            }, {
+                "name": "Multiple Screens",
+                "slug": "developing_for_multiple_screens_and_environments",
+                "toolkit": "universal"
+            }, {
+                "name": "View Controllers",
+                "slug": "view_controllers",
+                "toolkit": "universal"
+            }, {
+                "name": "View Models & Binding",
+                "slug": "view_models_data_binding",
+                "toolkit": "universal"
+            }, {
+                "name": "View Model Internals",
+                "slug": "view_model_internals",
+                "toolkit": "universal"
+            }, {
+                "name": "Using the Router",
+                "slug": "router",
+                "toolkit": "universal"
+            }]
+        }, {
+            "name": "UI Components",
+            "slug": "components",
+            "children": [{
+                "name": "Carousel",
+                "slug": "carousel",
+                "toolkit": "modern"
+            }, {
+                "displayNew": true,
+                "name": "Calendar",
+                "slug": "calendar",
+                "toolkit": "universal",
+                "tier": "premium"
+            }, {
+                "name": "Forms",
+                "slug": "forms",
+                "toolkit": "classic"
+            }, {
+                "name": "Introduction to Charting",
+                "slug": "introduction_to_charting",
+                "toolkit": "universal"
+            }, {
+                "name": "Trees",
+                "slug": "trees",
+                "toolkit": "classic"
+            }, {
+                "name": "Grids",
+                "slug": "grids",
+                "toolkit": "classic"
+            }, {
+                "name": "Pivot Grid",
+                "slug": "pivot_grid",
+                "toolkit": "universal",
+                "tier": "premium"
+            }, {
+                "displayNew": true,
+                "name": "Exporter",
+                "slug": "exporter",
+                "tier": "premium"
+            }, {
+                "name": "Using Components in Grids",
+                "slug": "widgets_widgets_columns",
+                "toolkit": "classic"
+            }]
+        }, {
+            "name": "Tutorials",
+            "slug": "tutorials",
+            "children": [{
+                "name": "Sample Login App",
+                "slug": "login_app",
+                "toolkit": "classic"
+            }]
+        }, {
+            "name": "Backend Connectors",
+            "slug": "backend_connectors",
+            "children": [{
+                "name": "SOAP Services",
+                "slug": "soap",
+                "toolkit": "universal"
+            }, {
+                "name": "AMF Data Sources",
+                "slug": "amf",
+                "toolkit": "universal"
+            }, {
+                "name": "Ext Direct",
+                "slug": "direct",
+                "children": [{
+                    "name": "Ext Direct Specification",
+                    "slug": "specification",
+                    "toolkit": "universal"
+                }, {
+                    "name": "Using MySQL and PHP",
+                    "slug": "mysql_php",
+                    "toolkit": "classic"
+                }]
+            }]
+        }, {
+            "name": "Other Resources",
+            "slug": "other_resources",
+            "children": [{
+                "name": "Ext JS - FAQ",
+                "slug": "extjs_faq",
+                "toolkit": "universal"
+            }, {
+                "name": "Basics of OOP",
+                "slug": "oop_concepts",
+                "toolkit": "universal"
+            }, {
+                "name": "Ext JS Ecosystem",
+                "slug": "ecosystem",
+                "toolkit": "universal"
+            }]
+        }, {
+            "name": "Supported Browsers",
+            "slug": "supported_browsers",
+            "toolkit": "universal"
+        }]
+    }]
+}
