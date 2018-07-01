@@ -1,0 +1,191 @@
+{
+  "items" : [{
+      "text": "Guides",
+      "items": [
+        {
+          "name" : "Sencha Test Overview",
+          "slug" : "product_overview"
+        },
+        {
+          "name" : "Installation and Setup",
+          "slug" : "sencha_test_installation"
+        },
+        {
+          "name" : "Getting Started",
+          "slug" : "getting_started"
+        },
+        {
+          "name" : "What's New",
+          "slug" : "whats_new",
+          "children" : [
+            {
+              "name" : "What's New",
+              "slug" : "whats_new"
+            },
+            {
+              "name" : "Release Notes",
+              "slug" : "release_notes"
+            }
+          ]
+        },
+        {
+          "name" : "Testing Applications",
+          "slug" : "testing_applications",
+          "children" : [
+            {
+              "name" : "Projects, Scenarios, and Suites",
+              "slug" : "test_projects_scenarios_suites"
+            },
+            {
+              "name" : "In-browser vs WebDriver Testing",
+              "slug" : "in_browser_vs_webdriver"
+            },
+            {
+              "name" : "Unit vs Functional Testing",
+              "slug" : "unit_vs_functional_tests"
+            },
+            {
+              "name" : "Sencha Studio UI Tips",
+              "slug" : "sencha_studio_ui"
+            },
+            {
+              "name" : "Testing Ext JS Applications",
+              "slug" : "testing_extjs_apps"
+            },
+            {
+              "name" : "Testing ExtReact Applications",
+              "slug" : "testing_extreact_apps"
+            },
+            {
+              "name" : "Testing Other Web Applications",
+              "slug" : "testing_other_web_apps"
+            },
+            {
+              "name" : "Using the Test Runner",
+              "slug" : "using_the_test_runner"
+            },
+            {
+              "name" : "Visualize Test Code",
+              "slug" : "visualize_test_code"
+            }
+          ]
+        },
+        {
+          "name" : "Sencha Test Futures API",
+          "slug" : "futures_apis",
+          "children" : [
+            {
+              "name" : "Introduction to Futures API",
+              "slug" : "introduction_to_futures_apis"
+            },
+            {
+              "name" : "Locators",
+              "slug" : "locators"
+            },
+            {
+              "name" : "Futures API Examples",
+              "slug" : "futures_api_examples"
+            },
+            {
+              "name" : "Web Browser APIs",
+              "slug" : "web_browser_apis"
+            },
+            {
+              "name" : "Navigation and URL APIs",
+              "slug" : "navigation_url_apis"
+            },
+            {
+              "name" : "Requiring Node Modules",
+              "slug" : "using_require_syntax"
+            }
+          ]
+        },
+        {
+          "name" : "Event Recorder",
+          "slug" : "event_recorder",
+          "children" : [
+            {
+              "name" : "Introduction to Event Recorder",
+              "slug" : "introduction_to_event_recorder"
+            },
+            {
+              "name" : "Event Recorder Browser Support",
+              "slug" : "event_recorder_browser_support"
+            }
+          ]
+        },
+        {
+          "name" : "Inspect Tool",
+          "slug" : "inspect_tool",
+          "children" : [
+            {
+              "name" : "Introduction to the Inspect Tool",
+              "slug" : "introduction_to_inspect_tool"
+            },
+            {
+              "name" : "Creating and Using Page Objects",
+              "slug" : "creating_using_page_objects"
+            }
+          ]
+        },
+        {
+          "name" : "CLI and the Archive Server",
+          "slug" : "cli_archive_server",
+          "children" : [
+            {
+              "name" : "Sencha Test CLI (STC)",
+              "slug" : "sencha_test_cli"
+            },
+            {
+              "name" : "Sencha Test Archive Server",
+              "slug" : "sencha_test_archive_server"
+            },
+            {
+              "name" : "Screenshot Comparison",
+              "slug" : "screenshot_comparison"
+            },
+            {
+              "name" : "Archive Server Results",
+              "slug" : "archive_server_results"
+            }
+          ]
+        },
+        {
+          "name" : "Browser Farms",
+          "slug" : "browser_farms",
+          "children" : [
+            {
+              "name" : "Introduction to Browser Farms",
+              "slug" : "introduction_to_browser_farms"
+            },
+            {
+              "name" : "Standalone Selenium Servers",
+              "slug" : "standalone_selenium_servers"
+            },
+            {
+              "name" : "Sauce Labs",
+              "slug" : "sauce_labs"
+            }, 
+            {
+              "name" : "BrowserStack",
+              "slug" : "browserstack"
+            }
+          ]
+        },
+        {
+          "name" : "ALM Integration",
+          "slug" : "alm_integration",
+          "children" : [
+            {
+              "name" : "Introduction to Jira Integration",
+              "slug" : "introduction_to_jira_integration"
+            },
+            {
+              "name" : "Jira Integration within STC",
+              "slug" : "jira_integration_within_stc"
+            }
+          ]
+        }
+      ]
+  }]
+}

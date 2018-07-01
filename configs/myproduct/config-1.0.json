@@ -1,0 +1,77 @@
+{
+  "items" : [{
+      "text": "Guides",
+      "items": [
+        {
+          "name" : "Sencha Test Overview",
+          "slug" : "product_overview"
+        },
+        {
+          "name" : "Installation and Setup",
+          "slug" : "sencha_test_installation"
+        },
+        {
+          "name" : "Getting Started",
+          "slug" : "getting_started"
+        },
+        {
+          "name" : "What's New",
+          "slug" : "whats_new",
+          "children" : [
+            {
+              "name" : "What's New",
+              "slug" : "whats_new"
+            },
+            {
+              "name" : "Release Notes",
+              "slug" : "release_notes"
+            }
+          ]
+        },
+        {
+          "name" : "Testing Existing Applications",
+          "slug" : "testing_existing_apps"
+        },
+        {
+          "name" : "Testing New Applications",
+          "slug" : "testing_applications"
+        },
+        {
+          "name" : "CLI and the Archive Server",
+          "slug" : "command_line_archive_server"
+        },
+        {
+          "name" : "Projects, Scenarios, and Suites",
+          "slug" : "test_projects_scenarios_suites"
+        },
+        {
+          "name" : "Using the Test Runner",
+          "slug" : "using_the_test_runner"
+        },
+        {
+          "name" : "Unit vs Functional Testing",
+          "slug" : "unit_functional_tests"
+        },
+        {
+          "name" : "Event Recorder",
+          "slug" : "event_recorder"
+        },
+        {
+          "name" : "In-browser vs WebDriver Testing",
+          "slug" : "creating_tests"
+        },
+        {
+          "name" : "Standalone Selenium Servers",
+          "slug" : "standalone_selenium_servers"
+        },
+        {
+          "name" : "Using the Inspector",
+          "slug" : "inspector"
+        },
+        {
+          "name" : "ALM Integration",
+          "slug" : "alm_integration"
+        }
+      ]
+  }]
+}

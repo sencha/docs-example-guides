@@ -1,0 +1,12 @@
+{
+    "items": [
+      {
+        "text": "Guides",
+        "items": [
+            {
+              "slug": "getting_started",
+              "name": "Getting Started"
+            }
+        ]
+      }]
+  }
