@@ -1,187 +1,169 @@
-# Getting Started
+# Getting Started with Ext JS and npm
+This guide covers creating an Ext JS application using npm. 
 
-Once you have [installed Sencha Test](./sencha_test_installation.html), the next step is organizing your
-test environment. As a developer or test engineer, Sencha Studio is where most of the action takes place. Once
-you have created and configured your test environment in Sencha Studio, you can use the **stc**
-command-line tool to automate test execution. This guide will introduce the core concepts for organizing
-your test projects and show you how to quickly get going with Sencha Studio.
+## Requirements
+These are required to use the steps below. 
 
-## Sencha Studio
-
-When launched, Sencha Studio will present you with the welcome screen.  This is where you 
-select your role. The role can be changed at a later point in time under Preferences, if needed.
-
-![Sencha Studio Welcome Screen](images/studio-role-selection-screen.png)
-
-### Roles
-
-Sencha Test utilizes the concept of "roles" to better identify your particular needs.  
-
-### Developer Role
-As a developer, you will be able to open an Ext JS project from within Sencha Test and perform
-the following operations:
-
-+ Create a development Build using Sencha Cmd
-+ Create and run unit tests
-+ Create and run end-to-end tests
-    + Run tests in-browser
-    + Run tests using WebDriver
-
-### Test Automation Engineer Role
-As a test automation engineer, you will be able to create a new project and manage all test cases.  You will also be able to perform the following operations:
-
-+ Create end-to-end test cases
-    + Run tests using WebDriver
-
-### Switching Between Roles
-Once you have selected a persona, the scenarios you create from the project settings screen will belong to that persona.
-
-#### Test Engineer
-When you switch from Developer to Test Engineer, you will have options to create end-to-end test cases using WebDriver.
-
-#### Developer
-When you switch from Test Engineer to Developer, you will have options to create and run both unit and
-end-to-end tests as mentioned above.
-
-## Guided Tour
-
-Next, you will be shown a screen explaining Test's built-in guided tour.  When you first
-open many of the views, they will display a guided tour of their various features.
-
-After continuing, you'll be shown a screen explaining our community forum, which is available
-[here](https://www.sencha.com/forum/forumdisplay.php?145-Q-amp-A).
-
-We've finally arrived at the root view from which you may open or create a **project**.
-
-![Sencha Studio Welcome Screen](images/studio-new-project-screen.png)
+* <a href='https://nodejs.org/en/download/' target='_blank'>Node.js® 8.11+</a>
+* <a href='https://nodejs.org/en/download/' target='_blank'>npm 6+</a>
+* <a href='https://java.com/' target='_blank'>Java 8 or 11+</a>
 
 
-## Projects
+## Retrieve your npm Repository Access Credentials
+You'll need access to the npm Repository. There are two ways to get acces, sign up for a trial or purchase a subscription.
 
-A project is a top-level container for all the things that define the test environment. A project is simply a
-directory in the file system that contains a `"workspace.json"` file. This file is understood by both Sencha Test
-as well as Sencha Cmd (6+). This file describes things like applications, packages, themes, Sencha frameworks, and
-now **Test Projects**.
+### Start a Trial
+* [Sign up for a trial](https://www.sencha.com/products/evaluate/) to get access to our npm repo.
 
-You will first need to open an existing project or create a new project. If you are using Sencha Cmd, you can
-simply open your existing Sencha Cmd workspace or stand-alone application directly in Sencha Test. Sencha Cmd is
-not required, so don't worry if you are not currently using it. If Sencha Cmd is installed, however, Sencha Studio
-will enable its Cmd Integration feature by default. This can be disabled using the Preferences dialog. Be aware that
-disabling this integration does not change the fact that both Sencha Test and Sencha Cmd will share the same
-`"workspace.json"` file.
 
-At present, each application, package, and workspace may contain a single test project (backed by a `test/project.json` 
-file by default).  Test projects house the test suites discussed in further detail in later guides.
+### Purchase a Subscription
+Existing customers will have access to the npm repo. [Find out more about the subscription options here.](https://www.sencha.com/store/)
 
-### Creating Projects
-You can create a new project using the “New Project” button on the welcome screen.
 
-1. Click the “New Project” button
-1. Choose the destination folder for the project
-1. Define a default/base URL, if desired
-1. Click "OK"
+## Generate the Ext JS Application
 
-![Sencha Studio New Project Window](images/studio-new-project-creation.png)
+### Step 1: Login to the npm Repository
+Use your trial or existing npm credentials to log into the npm repository with the `@sencha` scope.
 
-Once you have created (or opened) a project, Sencha Studio will display it on the welcome screen when you next
-launch the application. By default, Sencha Studio re-opens the previously opened project on launch (this behavior can be changed in Preferences).
+```
+npm login --registry=https://npm.sencha.com --scope=@sencha
+```
 
-### Opening a Project
-If you have an existing project, for example if you pull the code from a source control repository, you would
-click on the “Open Project“ button and select the existing project/workspace folder.  
+**Note:**  Your email is used for a username where the `@` character switched to `'..'` two periods, for example `name@gmail.com` converts to `name..gmail.com`. 
 
-Sencha Studio seamlessly integrates with projects/workspaces generated by Sencha Cmd, which may house applications, themes, or packages. Simply click “Open Project” to open these projects/workspaces.
+### Step 2: Install the App Generator CLI
+Install the Ext JS app generator CLI command tool `ext-gen` which will be used to generate the application.
 
-### Project Screen
-Once you open a project, Sencha Studio will display its contents in the project navigation tree on the left side
-of the application. 
+```
+npm install -g @sencha/ext-gen
+```
 
-In a Sencha Cmd workspace there can be applications in addition to
-test projects. Each application has its own test project indicated by the expandable **Tests** node.
+### Step 3: Generate the Application
+Generate the Ext JS application using the interactive walkthrough. Use `ext-gen app -a` to skip the interactive walkthrough. 
 
-The workspace itself can also contain a test project. If the test project is not yet initialized,
-this will be indicated by an un-expandable **Tests** node.
+```
+ext-gen app -i
+```
 
-To create or configure test projects, see the [Projects, Scenarios and Suites](./testing_applications/test_projects_scenarios_suites.html)
-guide.
+**CLI Walkthrough**
 
-### Viewing Files
-The project tree displays the project contents in a logical structure. You can also view the actual files
-and folders in the project by switching to the **Files** tab.
+  *Would you like to see the defaults for package.json?* `(y/N)` 
 
-![Files Tab](images/sencha-test-demo-project-files-tab.png)
+      If you select `yes`, ext-gen shows all defaults for package.json
+      
+  *Would you like to create a package.json file with defaults?* `(Y/n)`
+   
+      This creates a package.json with the defaults
 
-Selecting a text file in the tree will open the file in the Sencha Studio text editor. Selecting unrecognized file types has no effect.
+  *What would you like to name your Ext JS app?* (MyApp) 
 
-### Reviewing Test Runs
-To review results from test runs associated with the project, select the **Runs** tab.
+      Type name of your app
 
-The test runs listed in this tab are retrieved from the associated Sencha Test Archive Server. Selecting a
-run will download the results and display them in the content area.
+  *What type of Ext JS template do you want?* (Use arrow keys)
 
-![Test Runs Tab](images/sencha-test-demo-project-runs-tab.png)
+      ❯ make a selection from a list
+        type a folder name
 
-### Configuring Browser Farms
-To manage browser farms (for example, WebDriver hubs), select the **Browsers** tab.
+  *What Ext JS template would you like to use?* 
 
-From this tab, you can add new browser farm definitions. These defintions can be used in Sencha Studio's Test
-Runner or from the command-line using **stc**.
+        classicdesktop
+        classicdesktoplogin
+        moderndesktop
+        moderndesktopminimal
+        universalclassicmodern
+      ❯ universalmodern
 
-![Browsers Tab](images/sencha-test-demo-project-browsers-tab.png)
+  *Would you like to generate the Ext JS npm project with above config now?* `(Y/n)`
+  
+      Last question, will output the results. 
 
-### Switching Workspaces
-To return to the welcome screen after opening a workspace, select the following from the application menu:
 
-    File / Sencha Studio        (Windows and Linux / Mac)
-        Close Project
+### Step 4: Run the New Application
+Start up the newly created application in the default browser with these commands. 
 
-You may also select from recently opened projects using the application menu:
+* `cd ./<your-app-name>`
+* `npm start`
 
-    File / Sencha Studio
-        Reopen Project
-            [recently opened Projects]
 
-You can open a project from any view using the application menu:
+### Step 5: Modify the Application
+The resulting app uses the webpack-dev-server. 
+So any changes you make will be immediately reflected in the browser.
 
-    File / Sencha Studio
-        Open Project
+* Modify your source code. 
+* Then check the browser, it will auto reload and update with the new changes.
 
-You may also create a new project using the application menu:
 
-    File / Sencha Studio
-        New
-            Project...
+## What's Next
 
-### Preferences and Help
-Sencha Studio has many configuration preferences. These can be accessed using the "gear" icon in the upper-right
-of the application.
+* [Building Layouts](/extjs/7.0.0/guides/core_concepts/layouts.html)
 
-To get help, click the "?" icon and the Sencha Test Documentation page will be opened in the default browser.
 
-### Additional Items
-In addition to the main functional pieces of Sencha Studio, there are three tabs that provide access to some of
-the more internal aspects of Sencha Studio:
+## Reference
 
-+ Alerts
-+ Tasks
-+ Log
+### App Generation CLI Options
+Here's a list of the CLI options you could use to generate your application. 
 
-The **Alerts** tab contains important messages and items that may require your attention. Alerts are different
-from log messages in that they are typically requests for action or important notifications. These messages can
-be discarded when you no longer need them.
+Example:
+```
+ext-gen app (-h) (-d) (-i) (-t 'template') (-m 'moderntheme') (-c 'classictheme') (-n 'name') (-f 'folder')
+```
 
-The **Tasks** tab shows a list of active background activities managed by Sencha Studio.
+| CLI Options        |  Alias        | Description | 
+|--------------------|---------------|-------------|
+| -h                 | --help        | show help (no parameters also shows help) |
+| -d                 | --defaults    |  show defaults for package.json |
+| -i                 | --interactive |  run in interactive mode (question prompts will display) |
+| -t                 | --template    | name for Ext JS template used for generate |
+| -c                 | --classictheme|  theme name for Ext JS classic toolkit (not in Community Edition)|
+| -m                 | --moderntheme | theme name for Ext JS modern toolkit|
+| -n                 | --name        |  name for Ext JS generated app |
+| -f                 | --folder      |  folder name for Ext JS application (not implemented yet) |
+| -v                 | --verbose     |  verbose npm messages (for problems only) |
 
-The **Log** tab will display and filter log messages from various sources (like background tasks). The log can
-be easily copied to the clipboard which can help when troubleshooting problems.
+### Available App Templates
+There are several app templates to generate your application from. Set the `--template` property with one of the options below.
 
-## Conclusion
-With your initial project set up, you can now proceed to creating your first test suites. Check out the
-[Projects, Scenarios, and Suites](./testing_applications/test_projects_scenarios_suites.html) guide for 
-instructions on setting
-up the organizational structure for your tests. See the 
-[stc usage guide](./cli_archive_server/sencha_test_cli.html)
-for using **stc** to run your tests from the command-line.
+Example:
+```
+ext-gen app --template universalmodern --moderntheme theme-material --name CoolUniversalApp
+```
 
-If you have  further questions, concerns, or bug reports, please visit the
-[Sencha Test forums](https://www.sencha.com/forum/forumdisplay.php?144-Sencha-Test).
+| Templates              | Target Platforms | Description     | 
+|------------------------| ---------------- | ----------------| 
+| classicdesktop         | Desktop | Classic toolkit desktop App template. |
+| classicdesktoplogin    | Desktop | Classic toolkit desktop App with login template. |
+| moderndesktop          | Dekstop | Modern toolkit desktop App template. |
+| moderndesktopminimal   | Desktop | Modern toolkit with simple desktop App template. |
+| &nbsp;                 | | |
+| universalclassicmodern | Mobile & Desktop | Mobile Modern toolkit & Classic toolkit desktop App template. | 
+| universalmodern        | Mobile & Desktop | This is a modern and universal template. |
+
+
+### Available Themes
+These themes are available in the ext-gen app generation. Set the `--classictheme` or `--moderntheme` properties with one of the options below. 
+
+Example:
+```
+ext-gen app --template universalmodern --moderntheme theme-material --name CoolUniversalApp
+```
+
+| Theme Options | Available in Toolkit|
+|---|---|
+| **Modern Toolkit Themes** | |
+| theme-material | Modern Toolkit |
+| theme-ios | Modern Toolkit| 
+| theme-neptune | Modern Toolkit |
+| theme-triton | Modern Toolkit | 
+| &nbsp; | |
+| **Classic Toolkit Themes** | |
+| theme-classic | Classic Toolkit |
+| theme-material | Classic Toolkit |
+| theme-neptune | Classic Toolkit |
+| theme-neptune-touch | Classic Toolkit |
+| theme-crisp | Classic Toolkit |
+| theme-crisp-touch | Classic Toolkit |
+| theme-triton | Classic Toolkit |
+| theme-graphite | Classic Toolkit |
+| theme-material | Classic Toolkit |
+
+
