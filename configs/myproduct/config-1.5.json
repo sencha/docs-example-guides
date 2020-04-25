@@ -4,7 +4,8 @@
       "items": [
         {
           "name" : "Testing Docs-Gen",
-          "slug" : "testing"
+          "slug" : "testing",
+          "displayNew": true,
         },
         {
           "name" : "Sencha Test Overview",
