@@ -24,6 +24,7 @@ Example of the tabs component.
 </text>
 ```
 
+Demo of the `<text/>` and component `<sencha-component-tabs/>` usage. 
 <text>
 <sencha-component-tabs tabsize='150px'>
   <tab title='Modern'>
