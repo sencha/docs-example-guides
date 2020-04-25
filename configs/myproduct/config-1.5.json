@@ -3,6 +3,10 @@
       "text": "Guides",
       "items": [
         {
+          "name" : "Testing Docs-Gen",
+          "slug" : "testing"
+        },
+        {
           "name" : "Sencha Test Overview",
           "slug" : "product_overview"
         },
