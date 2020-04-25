@@ -1,9 +1,11 @@
 # Sencha Test Overview
 
 ## Component Examples
+Use `<text/>` when using html web components.
+This tabs component is included with the docs build.
 
-<!-- Use text when using html web components -->
-<!-- This tabs component is included with the docs build -->
+Example of the tabs component.
+```
 <text>
 <sencha-component-tabs tabsize='150px'>
   <tab title='Modern'>
@@ -20,6 +22,26 @@
   </tab>
 </sencha-component-tabs> 
 </text>
+```
+
+<text>
+<sencha-component-tabs tabsize='150px'>
+  <tab title='Modern'>
+    <iframe 
+          src='https://fiddle.sencha.com/fiddle/35ee' 
+          style='height:300px;width:600px;' 
+          frameborder=0></iframe>
+  </tab>
+  <tab title='Classic'>
+    <iframe 
+          src='https://fiddle.sencha.com/fiddle/35ef' 
+          style='height:300px;width:600px;' 
+          frameborder=0></iframe>
+  </tab>
+</sencha-component-tabs> 
+</text>
+
+
 
 
 ## About 
