@@ -5,7 +5,7 @@
         {
           "name" : "Testing Docs-Gen",
           "slug" : "testing",
-          "displayNew": true,
+          "displayNew": true
         },
         {
           "name" : "Sencha Test Overview",
