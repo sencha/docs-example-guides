@@ -8,7 +8,8 @@
     <sencha-fiddle id='35ek' />
   </tab>
   <tab title='Classic'>
-    Tab B Content
+    Something here
+    <sencha-fiddle id='359m' />
   </tab>
 </sencha-component-tabs> 
 </text>
