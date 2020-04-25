@@ -23,22 +23,13 @@ Demo of the `<text/>` and component `<sencha-component-tabs/>` usage.
 <text>
 <sencha-component-tabs tabsize='150px'>
   <tab title='Modern'>
-    <iframe 
-          src='https://fiddle.sencha.com/fiddle/35ee' 
-          style='height:300px;width:600px;' 
-          frameborder=0></iframe>
+     <sencha-fiddle id='35ee' />
   </tab>
   <tab title='Classic'>
-    <iframe 
-          src='https://fiddle.sencha.com/fiddle/35ef' 
-          style='height:300px;width:600px;' 
-          frameborder=0></iframe>
+    <sencha-fiddle id='35ef' />
   </tab>
 </sencha-component-tabs> 
 </text>
-
-
-
 
 
 ## Requirements
