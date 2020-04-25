@@ -3,7 +3,7 @@
 ## Testing Tabs
 
 <text>
-<sencha-component-tabs tabsize='150px'>
+<sencha-tabs-simple tabsize='150px'>
   <tab title='Modern'>
     <sencha-fiddle id='35ek' />
   </tab>
@@ -11,5 +11,5 @@
     Something here
     <sencha-fiddle id='359m' />
   </tab>
-</sencha-component-tabs> 
+</sencha-tabs-simple> 
 </text>
