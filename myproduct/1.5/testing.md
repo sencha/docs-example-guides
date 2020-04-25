@@ -5,7 +5,7 @@
 <text>
 <sencha-component-tabs tabsize='150px'>
   <tab title='Modern'>
-    <fiddle id='35ek' />
+    <sencha-fiddle id='35ek' />
   </tab>
   <tab title='Classic'>
     Tab B Content
