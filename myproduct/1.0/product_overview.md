@@ -1,5 +1,29 @@
 # Sencha Test Overview
 
+## Component Examples
+
+<!-- Use text when using html web components -->
+<!-- This tabs component is included with the docs build -->
+<text>
+<sencha-component-tabs tabsize='150px'>
+  <tab title='Modern'>
+    <iframe 
+          src='https://fiddle.sencha.com/fiddle/35ee' 
+          style='height:300px;width:600px;' 
+          frameborder=0></iframe>
+  </tab>
+  <tab title='Classic'>
+    <iframe 
+          src='https://fiddle.sencha.com/fiddle/35ef' 
+          style='height:300px;width:600px;' 
+          frameborder=0></iframe>
+  </tab>
+</sencha-component-tabs> 
+</text>
+
+
+## About 
+
 Sencha Test is a critical piece of the Sencha Platform that helps developers and test
 engineers achieve new levels of quality in their applications while providing a much-needed
 productivity boost throughout the testing effort. Sencha Test does this by bringing together
