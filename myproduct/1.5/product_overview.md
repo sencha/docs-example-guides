@@ -7,27 +7,27 @@ This tabs component is included with the docs build.
 Example of the tabs component.
 ```
 <text>
-<sencha-component-tabs tabsize='150px'>
+<sencha-tabs-simple tabsize='150px'>
   <tab title='Modern'>
     <sencha-fiddle id='35ee'/>
   </tab>
   <tab title='Classic'>
     <sencha-fiddle id='35ef'/>
   </tab>
-</sencha-component-tabs> 
+</sencha-tabs-simple> 
 </text>
 ```
 
-Demo of the `<text/>` and component `<sencha-component-tabs/>` usage. 
+Demo of the `<text/>` and component `<sencha-tabs-simple/>` usage. 
 <text>
-<sencha-component-tabs tabsize='150px'>
+<sencha-tabs-simple tabsize='150px'>
   <tab title='Modern'>
     <sencha-fiddle id='35ee'/>
   </tab>
   <tab title='Classic'>
     <sencha-fiddle id='35ef'/>
   </tab>
-</sencha-component-tabs> 
+</sencha-tabs-simple> 
 </text>
 
 
